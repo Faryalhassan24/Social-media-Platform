@@ -1,0 +1,39 @@
+
+
+
+
+.project-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.error-msg {
+   color: #000000;
+    background: #e5ffeb;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+body.dark .error-msg {
+    background: #442222;
+    color: #ff8a8a;
+}
+
+
+.input-group input:focus {
+    border-color: rgb(76, 234, 76);
+    /* border-style: dotted; */
+    /* border: 2px solid purple; */
+}
