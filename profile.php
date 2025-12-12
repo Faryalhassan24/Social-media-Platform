@@ -38,20 +38,18 @@ if (isset($_GET["delete"])) {
     </div>
     <div class="main">
         <div class="center-bar">
-                <input type="file"name="user_image" id="user_image">
-                <div class="post-friend">
-                    <div>
-                <p>0</p>
-                <h4>post</h4>
-                    </div>
-                    <div>
-                  <p>0</p>
-                  <h4>friends</h4>
-                    </div>
+    <img src="images/profile image.png" alt="Profile Image">
 
-                </div>
+    <div class="post">
+        <p>0</p>
+        <h4>Post</h4>
+    </div>
 
-            </div>
+    <div class="friend">
+        <p>0</p>
+        <h4>Friends</h4>
+    </div>
+</div>
         <h3>Your Posts</h3>
         <div class="posts-container">
             <?php
@@ -68,7 +66,7 @@ if (isset($_GET["delete"])) {
                         <small>".$row["created_at"]."</small>
                         <div class='post-actions'>
                             <a href='update.php?id=".$row["id"]."'><i class='fa-solid fa-pen'></i> Edit Post</a>
-                            <a href='profile.php?delete=".$row["id"]."'><i class='fa-solid fa-trash'></i> Delete</a>
+                            <span> <a href='profile.php?delete=".$row["id"]."'><i class='fa-solid fa-trash'></i> Delete</a></span>
                         </div>
                     </div>";
                 }

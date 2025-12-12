@@ -6,6 +6,7 @@
     <title>FakeBook settings</title>
 </head>
 <body>
+     <a href="Change_profile_image.php">change profile picture</a>
     <a href="edit_profile.php">Change password</a>
     <a href="theme.php">Change theme</a>
 </body>
