@@ -37,8 +37,22 @@ if (isset($_GET["delete"])) {
         <a class="side-link" href="index.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
     </div>
     <div class="main">
-        <h3>Your Posts</h3>
+        <div class="center-bar">
+                <input type="file"name="user_image" id="user_image">
+                <div class="post-friend">
+                    <div>
+                <p>0</p>
+                <h4>post</h4>
+                    </div>
+                    <div>
+                  <p>0</p>
+                  <h4>friends</h4>
+                    </div>
 
+                </div>
+
+            </div>
+        <h3>Your Posts</h3>
         <div class="posts-container">
             <?php
             $myposts = $conn->prepare("SELECT * FROM posts WHERE user_id = ? ORDER BY id DESC");
