@@ -105,6 +105,10 @@ if (isset($_POST["postBtn"])) {
     </div>
     
     <div class="rightbar">
+        <div class="search">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <h3>Trending</h3>
         <div class="trend-box">
             <p># Nature</p>

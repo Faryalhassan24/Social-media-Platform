@@ -32,6 +32,7 @@ if (isset($_GET["delete"])) {
 
     <div class="sidebar">
         <h2><?php echo htmlspecialchars($username); ?></h2>
+        <hr>
         <a class="side-link" href="index.php"><i class="fa-solid fa-house"></i> Home</a>
         <a class="side-link" href="settings.php"><i class="fa-solid fa-gear"></i>Setting</a>
         <a class="side-link" href="index.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
@@ -50,6 +51,7 @@ if (isset($_GET["delete"])) {
         <h4>Friends</h4>
     </div>
 </div>
+  <hr>
         <h3>Your Posts</h3>
         <div class="posts-container">
             <?php

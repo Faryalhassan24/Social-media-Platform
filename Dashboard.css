@@ -175,6 +175,37 @@
     top: 0;
     overflow-y: auto;
 }
+.search {
+    margin: 20px 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+    background-color: #fff;
+    
+}
+
+.search i {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+}
+.search input:focus {
+border-color: dodgerblue;
+}
 
 
 .trend-box,
