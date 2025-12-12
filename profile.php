@@ -34,9 +34,8 @@ if (isset($_GET["delete"])) {
         <h2><?php echo htmlspecialchars($username); ?></h2>
         <a class="side-link" href="index.php"><i class="fa-solid fa-house"></i> Home</a>
         <a class="side-link" href="settings.php"><i class="fa-solid fa-gear"></i>Setting</a>
-        <a class="side-link" href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        <a class="side-link" href="index.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
     </div>
-
     <div class="main">
         <h3>Your Posts</h3>
 

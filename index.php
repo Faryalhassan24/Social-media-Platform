@@ -43,10 +43,26 @@ if (isset($_POST["postBtn"])) {
 
         <div class="part2">
             <div class="top-text">
-                <h5>People You May Follow</h5>
-                <h6>suggest</h6>
+                <h3>People You May Follow</h3>
+                <h5>suggest</h5>
             </div>
-            <div class="follow-content"></div>
+            <div class="follow-content">
+        <?php
+        $users = $conn->query("SELECT * FROM userdata WHERE user_id != $user_id");
+
+        if ($users->num_rows > 0) {
+            while ($row = $users->fetch_assoc()) {
+                echo "<div class='follow-user'>";
+                echo "<span>".htmlspecialchars($row['username'])."</span>";
+                echo " <button class='follow-button'>Follow</button>";
+                echo "</div>";
+
+            }
+        } else {
+            echo "<p>No users to suggest.</p>";
+        }
+        ?>
+    </div>
         </div>
 
         <div class="part3">
@@ -87,9 +103,6 @@ if (isset($_POST["postBtn"])) {
         </div>
 
     </div>
-
-
-
     
     <div class="rightbar">
         <h3>Trending</h3>
@@ -106,5 +119,6 @@ if (isset($_POST["postBtn"])) {
     </div>
 
 </div>
+<script src="Follow-request.js"></script>
 </body>
 </html>

@@ -42,11 +42,57 @@
 
 .sidebar .part2 .top-text {
     margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.sidebar .part2 .top-text h5 {
+    color: #888;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .sidebar .part2 .follow-content {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     flex-grow: 1;
     overflow-y: auto;
+}
+
+.sidebar .part2 .follow-content span {
+    font-weight: 500;
+    font-family: sans-serif;
+
+}
+
+.sidebar .part2 .follow-content .follow-button {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.sidebar .part2 .follow-content .follow-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sidebar .part2 .follow-content .follow-user .requested {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+    font-size: 14px;
+
 }
 
 .sidebar .part3 {
@@ -80,8 +126,9 @@
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .post-box h3 {
     margin-bottom: 10px;
 }
@@ -117,6 +164,7 @@
 .post small {
     color: #888;
 }
+
 .rightbar {
     width: 28%;
     padding: 20px;
@@ -129,18 +177,21 @@
 }
 
 
-.trend-box, .notify-box {
+.trend-box,
+.notify-box {
     background: #fff;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.trend-box p, .notify-box p {
+.trend-box p,
+.notify-box p {
     margin-bottom: 8px;
     color: #333;
 }
+
 .posts-container {
     display: flex;
     flex-direction: column;
@@ -152,13 +203,13 @@
     background-color: #ffffff;
     border-radius: 10px;
     padding: 15px 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .post:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .post-header {
@@ -182,38 +233,4 @@
     font-size: 15px;
     color: #333;
     line-height: 1.5;
-}
-body {
-    background-color: #f9f8f8;
-    color: #000;
-    transition: all 0.3s ease;
-}
-
-body.dark {
-    background-color: #1e1e1e;
-    color: #f1f1f1;
-}
-
-.sidebar, .main, .rightbar, .post-box {
-    transition: all 0.3s ease;
-}
-
-body.dark .sidebar {
-    background-color: #2c2c2c;
-    color: #f1f1f1;
-}
-
-body.dark .main {
-    background-color: #121212;
-    color: #f1f1f1;
-}
-
-body.dark .rightbar {
-    background-color: #2c2c2c;
-    color: #f1f1f1;
-}
-
-body.dark .post-box {
-    background-color: #333;
-    color: #f1f1f1;
 }
